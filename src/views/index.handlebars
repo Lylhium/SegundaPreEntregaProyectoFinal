@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Listado de Productos !!</h1>
+  <h2> products : </h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Thumbnail</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each products}}
+        <tr>
+          <td>{{Title}}</td>
+          <td>{{Description}}</td>
+          <td>{{Price}}</td>
+          <td><img
+              src="/uploads/{{Thumbnail}}"
+              alt="Product Image"
+              width="50"
+            /></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
